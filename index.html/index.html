@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>News app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body style="margin-top: 110px;">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed w-100 top-0" id="nav">
+            <img src="https://cdn-icons-png.flaticon.com/512/71/71036.png" class="mx-4" id="logo" style="width: 56px;"
+                alt="">
+            <button class="navbar-toggler" id="mob-nav" style="position: absolute;right: 74px;" type="button"
+                data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <i class="bi bi-moon-fill" style="margin-right: 26px;" id="toggle-dark"></i>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto px-4 bg-light">
+                    <li class="nav-item d-flex justify-content-center" onclick="category('India')">
+                        <a class="nav-link" href="#"><b class="b">Home</b></a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center" id="technology" onclick="category('technology')">
+                        <a class="nav-link" href="#"><b class="b">Technology</b></a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center" id="politics" onclick="category('politics')">
+                        <a class="nav-link" href="#"><b class="b">Politics</b></a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center" id="finance" onclick="category('finance')">
+                        <a class="nav-link" href="#"><b class="b">Finance</b></a>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center" id="cricket" onclick="category('cricket')">
+                        <a class="nav-link" href="#"><b class="b">Cricket</b></a>
+                    </li>
+                </ul>
+                <div class="form-inline d-flex my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 mx-4" id="search-text" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" id="search-button">Search</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container" id="cards-container">
+
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card" id="cards-container">
+            <div class="">
+                <img src="https://via.placeholder.com/400x300" id="news-img" class="card-img-top" alt="">
+            </div>
+            <div class="card-body">
+                <h4 id="news-title" class="card-title">This is Title</h4>
+                <h6 id="news-source">end gadget 26/08/2023</h6>
+                <p id="news-desc" class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+                    repellat? Culpa illum est molestias tenetur ex veritatis ipsam hic voluptatum?</p>
+            </div>
+        </div>
+    </template>
+    <footer>All Rights Reserve &copy; MADE BY SUFIYAN MANIHAR</footer>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
